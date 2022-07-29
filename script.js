@@ -34,7 +34,10 @@ function win(userChoice, computerChoice) {
     result_p.innerHTML = `You win!! ${userChoice}  beats  ${computerChoice}.`
     document.getElementById(userChoice).classList.add('green-glow');
     setTimeout(function() {document.getElementById(userChoice).classList.remove('green-glow')},1000);
-}
+    //if(userScore === 5) {
+    //    window.alert("You won!!!!!!");
+    }
+
 
 function lose(userChoice, computerChoice) {
     //console.log ("lose");
@@ -44,7 +47,10 @@ function lose(userChoice, computerChoice) {
     result_p.innerHTML = `You lose! ${userChoice}  is defeated by  ${computerChoice}.`
     document.getElementById(userChoice).classList.add('red-glow');
     setTimeout(function() {document.getElementById(userChoice).classList.remove('red-glow')},1000);
-}
+    //if(computerScore === 5) {
+    //    window.alert("The computer won");
+    }
+
 
 function draw(userChoice, computerChoice) {
     //console.log ("draw");
@@ -101,3 +107,6 @@ function main() {
 }
 
 main();
+
+/*declare a winner when either user or cumputer reach 5*/
+
